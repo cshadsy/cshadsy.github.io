@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Scratch</title>
+    </head>
+    <body>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+        <div id="flash-container"></div>
+
+        <script>
+                window.addEventListener("load", () => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                document.getElementById("flash-container").appendChild(player);
+                player.load("data/Scratch.swf");
+            });
+        </script>
+
+    </body>
+</html>

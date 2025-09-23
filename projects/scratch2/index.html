@@ -2,6 +2,27 @@
     <head>
         <title>Scratch</title>
     </head>
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+        }
+
+        #flash-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        ruffle-embed, ruffle-embed > object {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
     <body>
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>

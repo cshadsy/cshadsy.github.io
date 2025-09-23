@@ -33,6 +33,8 @@
                 window.addEventListener("load", () => {
                 const ruffle = window.RufflePlayer.newest();
                 const player = ruffle.createPlayer();
+                player.style.width = "100%";
+                player.style.height = "100%";
                 document.getElementById("flash-container").appendChild(player);
                 player.load("data/Scratch.swf");
             });

@@ -85,3 +85,28 @@ p {
     background: #d4cfc4;
     box-shadow: inset 2px 2px 4px #aaa;
 }
+
+/* dirty hack to support iOS 6 safari and old browsers */
+
+.grid {
+  font-size: 0;
+  text-align: center;
+}
+
+.grid > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%; 
+  margin: 1% 1% 1% 0; 
+  font-size: 16px; 
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .grid > div {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+
